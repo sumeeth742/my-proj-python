@@ -1,0 +1,8 @@
+n=int(input())
+p=list(map(int,input().split())
+e=int(input())
+sum=0
+for i in range(2,n):
+    if(e%i==0):
+       sum=sum+(1*p[i])
+print(sum)
