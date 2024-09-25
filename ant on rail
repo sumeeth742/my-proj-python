@@ -1,0 +1,9 @@
+n=int (input ())
+1=list (map (int, input() split()))
+cnt=0
+c=0
+for i in 1: 
+    cnt+=i
+    if cnt==0:
+    c+=1
+print (c)
