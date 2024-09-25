@@ -1,0 +1,13 @@
+n=int(input("no of shots successfull:"))
+k=int(input("size of sub array:"))
+a=[]
+window_sum=0
+for i in range(1,n+1):
+    b=int(input("Enter a number:"))
+    a.append(b)
+max_score=0
+for i in a:
+    max_score = window_sum + (i * a[i])+k
+    if i==k+1:
+      break
+print(max_score)
