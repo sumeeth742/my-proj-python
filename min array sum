@@ -1,0 +1,12 @@
+import random
+ n=int(input())
+ A=list(map(int,input().split()))
+updt=0
+ sum=0
+ a,b=A[-1], A[-2]
+ avg=(a+b)/2
+ for i in range(n):
+     if A[i]<avg:
+        A[i]=0
+    sum =sum+A[i]
+print(sum)
