@@ -1,0 +1,12 @@
+def two_sum(nums,targets):
+    index_map={}
+    
+    for i ,num in enumerate(nums):
+        com=target-num
+        if com in index_map:
+            return(index_map[com],i)
+        index_map[num]=i
+    return[]
+nums=list(map(int,input().split()))
+target=int(input())
+print(list(two_sum(nums,target)))
