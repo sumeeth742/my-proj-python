@@ -1,0 +1,6 @@
+s=input()
+n=s.split()[::-1]
+l=[]
+for i in n:
+    l.append(i)
+print(" ".join(l))
